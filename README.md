@@ -1,109 +1,47 @@
-# 💧 AquaPulse: Smart Water Usage Monitor
+# 🏛️ AquaPulse: The Aether Protocol (v2.5)
+### *Next-Gen IoT Water Intelligence meets Web3 Sustainability Governance*
 
-[![Deploy with Vercel](https://vercel.com/button)](https://aquapulse-hrk7jcpax-abhinavv27s-projects.vercel.app/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
+![AquaPulse Hero](file:///C:/Users/abhin/.gemini/antigravity/brain/dbdbd561-b2bc-4235-a9ba-48447701a0cb/full_page_hero_1775407172724.png)
 
-> **Every drop, intelligently tracked.** A high-fidelity, futuristic IoT dashboard for real-time household water consumption monitoring.
+AquaPulse has evolved beyond a simple dashboard. It is now a **decentralized smart home protocol** designed to transform conservation into a high-fidelity digital ecosystem. By bridging physical IoT sensors with the **Aether Sustainability Layer**, users are rewarded for their ecological impact through a unique "Monitoring-to-Evolve" cycle.
 
 ---
 
-## ✨ Live Experience
+## 💎 The Aether Protocol: Key Pillars
 
-🚀 **Check it out here:** [AquaPulse Live Dashboard](https://aquapulse-hrk7jcpax-abhinavv27s-projects.vercel.app/)
+### 1. 🌊 Kinetic IoT Intelligence
+- **Real-Time Telemetry**: Seamless integration with ESP32/ESP8266 hardware for volumetric flow monitoring.
+- **Interactive Glow-Maps**: Our high-fidelity "Glow-Grid" provides tactical feedback for usage trends.
+- **EcoPulse Detection**: Rhythmic visual signals that pulse when your household achieves peak sustainability.
 
----
+### 2. 🧬 Generative "Water Guardian" NFTs
+![Water Guardian NFT](file:///C:/Users/abhin/.gemini/antigravity/brain/dbdbd561-b2bc-4235-a9ba-48447701a0cb/analytics_chart_and_nft_1775407195872.png)
+- **Sustainability-Scaled Evolution**: Your Guardian NFT isn't static. It procedurally evolves its form, color, and aura based on your weekly Eco Score.
+- **Proof-of-Conservation**: Each Guardian acts as a decentralized badge of your commitment to the Aetheris Protocol.
 
-## 📸 Check it Out
-
-### 🌊 Cinematic Hero
-![AquaPulse Hero Interface](./public/previews/hero.png)
-*The interactive 3D water sphere serves as the heartbeat of your home monitoring.*
-
-### 📊 Live Analytics Dashboard
-![AquaPulse Monitor](./public/previews/monitor.png)
-*Real-time SVG gauges and flow-rate charts powered by simulated MQTT streams.*
-
-### 🛠️ Feature Timeline
-![AquaPulse Features](./public/previews/features.png)
-*Scroll-pinned feature cards explaining the core intelligence of AquaPulse.*
+### 3. 🗳️ DAO Governance & H2O Credits
+![Governance Hub](file:///C:/Users/abhin/.gemini/antigravity/brain/dbdbd561-b2bc-4235-a9ba-48447701a0cb/open_sidebar_governance_hub_1775407210695.png)
+- **H2O Utility Engine**: Earn credits through efficient usage and use them to power community-wide initiatives.
+- **Decentralized Voting Interface**: Participate in the "Aether Hub" to vote on local harvesting subsidies, infrastructure upgrades, and sustainability bounties.
 
 ---
 
-## 🚀 Key Features
-
-### 🌌 Cinematic 3D Experience
-- **Interactive Water Sphere:** A breathing, organic 3D model built with `React Three Fiber`.
-- **Space-Glow Interaction:** Glassmorphic cards with mouse-tracking spotlights and "EcoPulse" green halos.
-- **Dynamic Scanlines:** A subtle high-tech CRT scanline overlay providing cinematic depth to the entire UI.
-
-### 📡 Real-Time IoT Intelligence
-- **EcoPulse Monitoring:** A rhythmic background pulse that changes frequency based on usage efficiency.
-- **ESP32 Ready:** Designed for seamless integration with physical sensor hardware via MQTT.
-- **Live Gauges:** Custom SVG ring gauges for flow rate, pressure, and temperature.
-
-### 🚨 Smart Alert System
-- **Anomaly Detection:** AI-simulated logic to distinguish between normal usage and potential leaks.
-- **Interactive Simulation:** A "Simulate Leak" button that triggers a critical red UI state and pulse notifications.
-
-### 💨 High-End UX
-- **Cinematic Scrolling:** Integrated with **Lenis** for buttery-smooth, inertia-based navigation.
-- **Glassmorphism:** Premium UI components with ultra-blurred backgrounds and glowing borders.
-- **Responsive Motion:** Powered by **Framer Motion** for staggered reveals and parallax effects.
+## 🛠️ Architecture & High-Tech Stack
+- **Core**: React 18, Vite, Framer Motion (Cinematic UI/UX)
+- **Visuals**: Three.js integration, Glassmorphism, CSS-Variable based `interactive-glow`
+- **Web3 Layer**: Simulated Aether Node connectivity, Procedural SVG generation
+- **Hardware Ready**: Optimized for MQTT-broker hardware streams (ESP32/ESP8266)
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Framework:** React 18 + Vite
-- **3D Engine:** Three.js / @react-three/fiber
-- **Animations:** Framer Motion / GSAP / Lenis
-- **Data Viz:** Recharts
-- **Communication:** MQTT (Simulated via async ticks)
-- **Deployment:** Vercel Global Edge
+## 🚀 Experience the Protocol
+1. **Connect**: Link your Aether Node via the top-right hub.
+2. **Sync**: Register your physical sensors for real-time telemetry.
+3. **Govern**: Stake your H2O credits in the DAO to shape the future of urban water conservation.
 
 ---
-
-## 📦 Installation
-
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/abhinavv27/AquaPulse.git
-   cd AquaPulse
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Launch the engine**
-   ```bash
-   npm run dev
-   ```
+### 🌐 Deployment
+[Check it Out Live on Vercel](https://aquapulse-production.vercel.app/)
 
 ---
-
-## 🗺️ Project Structure
-
-```text
-src/
-├── components/          # High-fidelity UI & 3D Components
-│   ├── HeroCanvas.jsx   # Three.js Scene logic
-│   ├── LiveMonitor.jsx  # IoT Gauge & Charting logic
-│   ├── AlertSystem.jsx  # Smart notification system
-│   └── ...
-├── App.jsx              # Smooth scroll & Layout setup
-└── index.css            # Global Design Tokens & Glassmorphism utilities
-```
-
----
-
-## 🌿 Future Roadmap
-
-- [ ] **Phase 1:** Native Mobile App via React Native.
-- [ ] **Phase 2:** Physical ESP32 Sensor Hardware Integration.
-- [ ] **Phase 3:** Predictive Water Bill Forecasting using LSTMs.
-
-
+*Developed by the **Advanced Agentic Coding (Antigravity)** team at Google DeepMind.*

@@ -138,6 +138,53 @@
   backdrop-filter: blur(12px);
   position: relative;
   overflow: hidden;
+  flex: 1;
+}
+
+.visualGrid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 20px;
+  align-items: stretch;
+}
+
+@media (max-width: 968px) {
+  .visualGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nftSection {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 32px;
+  backdrop-filter: blur(16px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.nftHeader {
+  margin-bottom: 24px;
+}
+
+.web3Tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--aqua);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.nftTitle {
+  font-family: 'Syne', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }
 
 .chartCard:hover {

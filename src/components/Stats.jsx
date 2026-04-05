@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { motion, useInView, useScroll, useTransform } from 'framer-motion'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts'
+import GuardianNFT from './Web3/GuardianNFT'
 import styles from './Stats.module.css'
 
 const USAGE_DATA = [
@@ -93,42 +94,59 @@ export default function Stats() {
           ))}
         </div>
 
-        {/* Bar Chart */}
-        <motion.div
-          className={styles.chartCard}
-          initial={{ opacity: 0, y: 60 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.35, duration: 0.8 }}
-        >
-          <div className={styles.chartHeader}>
-            <h3 className={styles.chartTitle}>Daily Usage — This Week</h3>
-            <span className={styles.chartMeta}>Liters consumed per day</span>
-          </div>
-          <ResponsiveContainer width="100%" height={220}>
-            <BarChart data={USAGE_DATA} barSize={32} margin={{ top: 10, right: 0, left: -20, bottom: 0 }}>
-              <XAxis dataKey="day" tick={{ fill: 'rgba(255,255,255,0.3)', fontSize: 12 }} axisLine={false} tickLine={false} />
-              <YAxis tick={{ fill: 'rgba(255,255,255,0.3)', fontSize: 11 }} axisLine={false} tickLine={false} />
-              <Tooltip content={<CustomBarTooltip />} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
-              <Bar dataKey="liters" radius={[8, 8, 0, 0]}>
-                {USAGE_DATA.map(({ day }) => (
-                  <Cell
-                    key={day}
-                    fill={day === TODAY
-                      ? 'url(#barGrad)'
-                      : 'rgba(0,200,255,0.15)'
-                    }
-                  />
-                ))}
-              </Bar>
-              <defs>
-                <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#00c8ff" />
-                  <stop offset="100%" stopColor="#0077b6" />
-                </linearGradient>
-              </defs>
-            </BarChart>
-          </ResponsiveContainer>
-        </motion.div>
+        {/* Chart & NFT Row */}
+        <div className={styles.visualGrid}>
+          {/* Bar Chart */}
+          <motion.div
+            className={styles.chartCard}
+            initial={{ opacity: 0, x: -60 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ delay: 0.35, duration: 0.8 }}
+          >
+            <div className={styles.chartHeader}>
+              <h3 className={styles.chartTitle}>Daily Usage — This Week</h3>
+              <span className={styles.chartMeta}>Liters consumed per day</span>
+            </div>
+            <ResponsiveContainer width="100%" height={220}>
+              <BarChart data={USAGE_DATA} barSize={32} margin={{ top: 10, right: 0, left: -20, bottom: 0 }}>
+                <XAxis dataKey="day" tick={{ fill: 'rgba(255,255,255,0.3)', fontSize: 12 }} axisLine={false} tickLine={false} />
+                <YAxis tick={{ fill: 'rgba(255,255,255,0.3)', fontSize: 11 }} axisLine={false} tickLine={false} />
+                <Tooltip content={<CustomBarTooltip />} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
+                <Bar dataKey="liters" radius={[8, 8, 0, 0]}>
+                  {USAGE_DATA.map(({ day }) => (
+                    <Cell
+                      key={day}
+                      fill={day === TODAY
+                        ? 'url(#barGrad)'
+                        : 'rgba(0,200,255,0.15)'
+                      }
+                    />
+                  ))}
+                </Bar>
+                <defs>
+                  <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#00c8ff" />
+                    <stop offset="100%" stopColor="#0077b6" />
+                  </linearGradient>
+                </defs>
+              </BarChart>
+            </ResponsiveContainer>
+          </motion.div>
+
+          {/* Guardian NFT Evolution */}
+          <motion.div
+            className={styles.nftSection}
+            initial={{ opacity: 0, x: 60 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ delay: 0.5, duration: 0.8 }}
+          >
+            <div className={styles.nftHeader}>
+              <div className={styles.web3Tag}>Aether Protocol</div>
+              <h3 className={styles.nftTitle}>Your Water Guardian</h3>
+            </div>
+            <GuardianNFT ecoScore={94} />
+          </motion.div>
+        </div>
       </div>
     </section>
   )
