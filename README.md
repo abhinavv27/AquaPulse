@@ -1,16 +1,103 @@
-# React + Vite
+# 💧 AquaPulse: Smart Water Usage Monitor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Deploy with Vercel](https://vercel.com/button)](https://aquapulse-hrk7jcpax-abhinavv27s-projects.vercel.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
 
-Currently, two official plugins are available:
+> **Every drop, intelligently tracked.** A high-fidelity, futuristic IoT dashboard for real-time household water consumption monitoring.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Live Experience
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🚀 **Check it out here:** [AquaPulse Live Dashboard](https://aquapulse-hrk7jcpax-abhinavv27s-projects.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📽️ Preview
+
+| Cinematic Hero | Live Monitoring | AI Alerts |
+| :---: | :---: | :---: |
+| ![Hero](https://raw.githubusercontent.com/abhinavv27/AquaPulse/main/public/preview-hero.png) | ![Monitor](https://raw.githubusercontent.com/abhinavv27/AquaPulse/main/public/preview-monitor.png) | ![Alerts](https://raw.githubusercontent.com/abhinavv27/AquaPulse/main/public/preview-alerts.png) |
+
+*(Note: Previews are simulated high-fidelity renders of the Gen-Z futuristic aesthetic)*
+
+---
+
+## 🚀 Key Features
+
+### 🌌 Cinematic 3D Experience
+- **Interactive Water Sphere:** A breathing, organic 3D model built with `React Three Fiber` and `MeshDistortMaterial`.
+- **Orbital Data Rings:** Visual representation of data flow cycles in a 3D space.
+- **Starfield Background:** 600+ dynamic particles creating a "space-age" atmosphere.
+
+### 📡 Real-Time IoT Integration
+- **MQTT Protocol:** Sub-second sensor data delivery simulation for multi-device tracking.
+- **Live Gauges:** Custom SVG ring gauges for flow rate, pressure, and temperature.
+- **Dynamic Charts:** Glowing area charts for historical usage analysis using `Recharts`.
+
+### 🚨 Smart Alert System
+- **Anomaly Detection:** AI-simulated logic to distinguish between normal usage and potential leaks.
+- **Interactive Simulation:** A "Simulate Leak" button that triggers a critical red UI state and push-style notifications.
+
+### 💨 High-End UX
+- **Cinematic Scrolling:** Integrated with **Lenis** for buttery-smooth, inertia-based navigation.
+- **Glassmorphism:** Premium UI components with ultra-blurred backgrounds and glowing borders.
+- **Responsive Motion:** Powered by **Framer Motion** for staggered reveals and parallax effects.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** React 18 + Vite
+- **3D Engine:** Three.js / @react-three/fiber
+- **Animations:** Framer Motion / GSAP / Lenis
+- **Data Viz:** Recharts
+- **Communication:** MQTT (Simulated via async ticks)
+- **Deployment:** Vercel Global Edge
+
+---
+
+## 📦 Installation
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/abhinavv27/AquaPulse.git
+   cd AquaPulse
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Launch the engine**
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 🗺️ Project Structure
+
+```text
+src/
+├── components/          # High-fidelity UI & 3D Components
+│   ├── HeroCanvas.jsx   # Three.js Scene logic
+│   ├── LiveMonitor.jsx  # IoT Gauge & Charting logic
+│   ├── AlertSystem.jsx  # Smart notification system
+│   └── ...
+├── App.jsx              # Smooth scroll & Layout setup
+└── index.css            # Global Design Tokens & Glassmorphism utilities
+```
+
+---
+
+## 🌿 Future Roadmap
+
+- [ ] **Phase 1:** Native Mobile App via React Native.
+- [ ] **Phase 2:** Physical ESP32 Sensor Hardware Integration.
+- [ ] **Phase 3:** Predictive Water Bill Forecasting using LSTMs.
+
+Produced with 💙 by **AquaPulse Team**.
