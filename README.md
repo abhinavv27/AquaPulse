@@ -1,7 +1,7 @@
 # 🏛️ AquaPulse: The Aether Protocol (v2.5)
 ### *Next-Gen IoT Water Intelligence meets Web3 Sustainability Governance*
 
-![AquaPulse Hero](file:///C:/Users/abhin/.gemini/antigravity/brain/dbdbd561-b2bc-4235-a9ba-48447701a0cb/full_page_hero_1775407172724.png)
+![AquaPulse Hero](public/screenshots/hero.png)
 
 AquaPulse has evolved beyond a simple dashboard. It is now a **decentralized smart home protocol** designed to transform conservation into a high-fidelity digital ecosystem. By bridging physical IoT sensors with the **Aether Sustainability Layer**, users are rewarded for their ecological impact through a unique "Monitoring-to-Evolve" cycle.
 
@@ -15,12 +15,12 @@ AquaPulse has evolved beyond a simple dashboard. It is now a **decentralized sma
 - **EcoPulse Detection**: Rhythmic visual signals that pulse when your household achieves peak sustainability.
 
 ### 2. 🧬 Generative "Water Guardian" NFTs
-![Water Guardian NFT](file:///C:/Users/abhin/.gemini/antigravity/brain/dbdbd561-b2bc-4235-a9ba-48447701a0cb/analytics_chart_and_nft_1775407195872.png)
+![Water Guardian NFT](public/screenshots/analytics.png)
 - **Sustainability-Scaled Evolution**: Your Guardian NFT isn't static. It procedurally evolves its form, color, and aura based on your weekly Eco Score.
 - **Proof-of-Conservation**: Each Guardian acts as a decentralized badge of your commitment to the Aetheris Protocol.
 
 ### 3. 🗳️ DAO Governance & H2O Credits
-![Governance Hub](file:///C:/Users/abhin/.gemini/antigravity/brain/dbdbd561-b2bc-4235-a9ba-48447701a0cb/open_sidebar_governance_hub_1775407210695.png)
+![Governance Hub](public/screenshots/governance.png)
 - **H2O Utility Engine**: Earn credits through efficient usage and use them to power community-wide initiatives.
 - **Decentralized Voting Interface**: Participate in the "Aether Hub" to vote on local harvesting subsidies, infrastructure upgrades, and sustainability bounties.
 
