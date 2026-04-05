@@ -41,7 +41,7 @@ AquaPulse has evolved beyond a simple dashboard. It is now a **decentralized sma
 
 ---
 ### 🌐 Deployment
-[Check it Out Live on Vercel](https://aquapulse-production.vercel.app/)
+[Check it Out Live on Vercel](https://aquapulse-eight.vercel.app/)
 
 ---
 *Developed by the **Advanced Agentic Coding (Antigravity)** team at Google DeepMind.*
