@@ -15,13 +15,19 @@
 
 ---
 
-## 📽️ Preview
+## 📸 Check it Out
 
-| Cinematic Hero | Live Monitoring | AI Alerts |
-| :---: | :---: | :---: |
-| ![Hero](https://raw.githubusercontent.com/abhinavv27/AquaPulse/main/public/preview-hero.png) | ![Monitor](https://raw.githubusercontent.com/abhinavv27/AquaPulse/main/public/preview-monitor.png) | ![Alerts](https://raw.githubusercontent.com/abhinavv27/AquaPulse/main/public/preview-alerts.png) |
+### 🌊 Cinematic Hero
+![AquaPulse Hero Interface](./public/previews/hero.png)
+*The interactive 3D water sphere serves as the heartbeat of your home monitoring.*
 
-*(Note: Previews are simulated high-fidelity renders of the Gen-Z futuristic aesthetic)*
+### 📊 Live Analytics Dashboard
+![AquaPulse Monitor](./public/previews/monitor.png)
+*Real-time SVG gauges and flow-rate charts powered by simulated MQTT streams.*
+
+### 🛠️ Feature Timeline
+![AquaPulse Features](./public/previews/features.png)
+*Scroll-pinned feature cards explaining the core intelligence of AquaPulse.*
 
 ---
 
@@ -100,4 +106,4 @@ src/
 - [ ] **Phase 2:** Physical ESP32 Sensor Hardware Integration.
 - [ ] **Phase 3:** Predictive Water Bill Forecasting using LSTMs.
 
-Produced with 💙 by **AquaPulse Team**.
+
