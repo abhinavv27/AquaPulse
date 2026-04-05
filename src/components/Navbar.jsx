@@ -49,11 +49,11 @@ export default function Navbar() {
 
         {/* CTA */}
         <div className={styles.cta}>
-          <div className={styles.liveIndicator}>
+          <div className={`${styles.liveIndicator} interactive-glow`}>
             <span className={styles.liveDot} />
-            <span>LIVE</span>
+            <span>OPERATIONAL</span>
           </div>
-          <button className={styles.ctaBtn}>Connect Sensor</button>
+          <button className={`${styles.ctaBtn} interactive-glow`}>Connect ESP32</button>
         </div>
       </div>
     </motion.nav>

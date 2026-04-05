@@ -32,6 +32,7 @@ function App() {
 
   return (
     <div className="app-root">
+      <div className="scanline-overlay"></div>
       <Navbar />
       <Hero />
       <LiveMonitor />

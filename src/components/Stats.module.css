@@ -104,19 +104,45 @@
   letter-spacing: 0.02em;
 }
 .bigStatDelta {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  color: #00ff87;
-  letter-spacing: 0.02em;
+  color: #00c8ff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-/* Chart */
+.ecoPulseCard {
+  border-color: rgba(0, 255, 135, 0.15);
+}
+
+.ecoPulseCard:hover {
+  border-color: rgba(0, 255, 135, 0.3);
+  box-shadow: 0 0 30px rgba(0, 255, 135, 0.05);
+}
+
+.pulseRing {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(0, 255, 135, 0.4);
+  border-radius: inherit;
+  pointer-events: none;
+  animation: pulse-eco 2s infinite;
+}
+
+/* Chart Card */
 .chartCard {
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 24px;
   padding: 32px;
   backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+}
+
+.chartCard:hover {
+  border-color: var(--border-glow);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
 }
 .chartHeader {
   display: flex;

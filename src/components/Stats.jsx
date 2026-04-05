@@ -69,16 +69,26 @@ export default function Stats() {
           {BIG_STATS.map(({ val, unit, label, delta }, i) => (
             <motion.div
               key={label}
-              className={styles.bigStatCard}
+              className={`${styles.bigStatCard} ${label.includes('Eco') ? styles.ecoPulseCard : ''} interactive-glow`}
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: i * 0.1, duration: 0.7 }}
+              onMouseMove={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                e.currentTarget.style.setProperty('--x', `${x}px`);
+                e.currentTarget.style.setProperty('--y', `${y}px`);
+              }}
             >
               <div className={styles.bigStatValue}>
                 {val}<span className={styles.bigStatUnit}>{unit}</span>
               </div>
               <div className={styles.bigStatLabel}>{label}</div>
-              <div className={styles.bigStatDelta}>{delta}</div>
+              <div className={styles.bigStatDelta} style={{ color: label.includes('Eco') ? '#00ff87' : '' }}>
+                {delta}
+              </div>
+              {label.includes('Eco') && <div className={styles.pulseRing}></div>}
             </motion.div>
           ))}
         </div>

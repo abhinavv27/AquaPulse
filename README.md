@@ -34,18 +34,18 @@
 ## 🚀 Key Features
 
 ### 🌌 Cinematic 3D Experience
-- **Interactive Water Sphere:** A breathing, organic 3D model built with `React Three Fiber` and `MeshDistortMaterial`.
-- **Orbital Data Rings:** Visual representation of data flow cycles in a 3D space.
-- **Starfield Background:** 600+ dynamic particles creating a "space-age" atmosphere.
+- **Interactive Water Sphere:** A breathing, organic 3D model built with `React Three Fiber`.
+- **Space-Glow Interaction:** Glassmorphic cards with mouse-tracking spotlights and "EcoPulse" green halos.
+- **Dynamic Scanlines:** A subtle high-tech CRT scanline overlay providing cinematic depth to the entire UI.
 
-### 📡 Real-Time IoT Integration
-- **MQTT Protocol:** Sub-second sensor data delivery simulation for multi-device tracking.
+### 📡 Real-Time IoT Intelligence
+- **EcoPulse Monitoring:** A rhythmic background pulse that changes frequency based on usage efficiency.
+- **ESP32 Ready:** Designed for seamless integration with physical sensor hardware via MQTT.
 - **Live Gauges:** Custom SVG ring gauges for flow rate, pressure, and temperature.
-- **Dynamic Charts:** Glowing area charts for historical usage analysis using `Recharts`.
 
 ### 🚨 Smart Alert System
 - **Anomaly Detection:** AI-simulated logic to distinguish between normal usage and potential leaks.
-- **Interactive Simulation:** A "Simulate Leak" button that triggers a critical red UI state and push-style notifications.
+- **Interactive Simulation:** A "Simulate Leak" button that triggers a critical red UI state and pulse notifications.
 
 ### 💨 High-End UX
 - **Cinematic Scrolling:** Integrated with **Lenis** for buttery-smooth, inertia-based navigation.
