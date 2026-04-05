@@ -3,7 +3,7 @@
 
 ![AquaPulse Hero](public/screenshots/hero.png)
 
-AquaPulse has evolved beyond a simple dashboard. It is now a **decentralized smart home protocol** designed to transform conservation into a high-fidelity digital ecosystem. By bridging physical IoT sensors with the **Aether Sustainability Layer**, users are rewarded for their ecological impact through a unique "Monitoring-to-Evolve" cycle.
+AquaPulse has evolved beyond a simple dashboard into a **decentralized smart home protocol** designed to transform conservation into a high-fidelity digital ecosystem. By bridging physical IoT sensors with the **Aether Sustainability Layer**, users are rewarded for their ecological impact through a unique "Monitoring-to-Evolve" cycle.
 
 ---
 
@@ -26,11 +26,36 @@ AquaPulse has evolved beyond a simple dashboard. It is now a **decentralized sma
 
 ---
 
+## 📊 System Architecture & Data Flow
+
+### 🔄 The Protocol Lifecycle
+```mermaid
+graph TD
+    A[ESP32 IoT Sensor] -- "Real-time Telemetry (MQTT/WebSocket)" --> B(AquaPulse Logic)
+    B -- "Analyze Usage" --> C{Sustainability Gate}
+    C -- "High Efficiency" --> D[Mint H2O Credits]
+    C -- "Low Efficiency" --> E[Usage Insights]
+    D -- "Stake Credits" --> F[Guardian NFT Evolution]
+    D -- "Spend Credits" --> G[DAO Governance Vote]
+    G -- "Propose Initiative" --> H[Community Harvesting Subsidy]
+```
+
+### 📈 Scalability & Network Load
+| Tier | Node Type | Capacity | Consensus Role |
+| :--- | :--- | :--- | :--- |
+| **Exosphere** | Full Validator | 10k+ Queries/s | Global Governance |
+| **Stratosphere** | Regional Node | 5k Queries/s | Local Subsidy Voting |
+| **Troposphere** | User Node (IoT) | Real-time Stream | Data Validation |
+
+---
+
 ## 🛠️ Architecture & High-Tech Stack
-- **Core**: React 18, Vite, Framer Motion (Cinematic UI/UX)
-- **Visuals**: Three.js integration, Glassmorphism, CSS-Variable based `interactive-glow`
-- **Web3 Layer**: Simulated Aether Node connectivity, Procedural SVG generation
-- **Hardware Ready**: Optimized for MQTT-broker hardware streams (ESP32/ESP8266)
+
+### 🧩 Core Infrastructure
+- **Frontend Engine**: React 18 & Vite (Optimized for ultra-low latency)
+- **Cinematic UX**: Framer Motion & Three.js (High-fidelity 3D/interactivity)
+- **Web3 Protocol**: Aetheris Node Simulation & Procedural SVG Generation
+- **Hardware Abstraction**: Dual-stream MQTT/WebSocket support for ESP32/ESP8266
 
 ---
 
@@ -40,6 +65,7 @@ AquaPulse has evolved beyond a simple dashboard. It is now a **decentralized sma
 3. **Govern**: Stake your H2O credits in the DAO to shape the future of urban water conservation.
 
 ---
+
 ### 🌐 Deployment
 [Check it Out Live on Vercel](https://aquapulse-eight.vercel.app/)
 
