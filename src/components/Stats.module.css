@@ -1,0 +1,139 @@
+.section {
+  padding: 160px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bgBand {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 119, 182, 0.06) 50%, transparent 100%);
+  pointer-events: none;
+  will-change: transform;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(0, 200, 255, 0.7);
+  background: rgba(0, 200, 255, 0.07);
+  border: 1px solid rgba(0, 200, 255, 0.14);
+  border-radius: 100px;
+  padding: 5px 14px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+.gradient {
+  background: linear-gradient(135deg, #00c8ff, #00e5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Big Stats */
+.bigStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 768px) {
+  .bigStats { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .bigStats { grid-template-columns: 1fr; }
+}
+
+.bigStatCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 28px 24px;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(12px);
+}
+.bigStatCard:hover {
+  border-color: rgba(0, 200, 255, 0.18);
+  background: rgba(0, 200, 255, 0.04);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.bigStatValue {
+  font-family: 'Syne', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.04em;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+.bigStatUnit {
+  font-size: 16px;
+  color: rgba(0, 200, 255, 0.7);
+  margin-left: 4px;
+}
+.bigStatLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+  letter-spacing: 0.02em;
+}
+.bigStatDelta {
+  font-size: 12px;
+  font-weight: 600;
+  color: #00ff87;
+  letter-spacing: 0.02em;
+}
+
+/* Chart */
+.chartCard {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 24px;
+  padding: 32px;
+  backdrop-filter: blur(12px);
+}
+.chartHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chartTitle {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.chartMeta {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.04em;
+}

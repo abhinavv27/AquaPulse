@@ -1,0 +1,121 @@
+.nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: min(860px, calc(100% - 40px));
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(6, 13, 20, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 100px;
+  padding: 10px 10px 10px 20px;
+  transition: all 0.4s ease;
+}
+
+.nav.scrolled .inner {
+  background: rgba(2, 4, 8, 0.9);
+  border-color: rgba(0, 200, 255, 0.15);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 200, 255, 0.1);
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoText {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+/* Links */
+.links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.55);
+  padding: 6px 14px;
+  border-radius: 100px;
+  transition: all 0.25s ease;
+  letter-spacing: 0.01em;
+}
+.link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* CTA */
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.liveIndicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.4);
+}
+.liveDot {
+  width: 6px;
+  height: 6px;
+  background: #00ff87;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00ff87;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+.ctaBtn {
+  background: linear-gradient(135deg, #00c8ff, #0077b6);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 100px;
+  letter-spacing: 0.01em;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+.ctaBtn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 24px rgba(0, 200, 255, 0.4);
+}
+
+@media (max-width: 680px) {
+  .links { display: none; }
+  .liveIndicator { display: none; }
+}
